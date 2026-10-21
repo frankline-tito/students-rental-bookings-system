@@ -1,48 +1,4 @@
-# CampusNest — Student Rental Booking System
-
-A full, working PHP + MySQL web application that helps campus students (especially
-first-years) find verified rooms/houses near school instead of wandering from
-plot to plot — and lets landlords list, manage and get paid for their rentals.
-
-Built with: **PHP (PDO/MySQL), HTML, CSS, JavaScript, Bootstrap 5** — runs on
-**XAMPP/Apache**, matching the stack you're already using in VS Code.
-
----
-
-## 1. Setup Instructions (XAMPP)
-
-1. Copy the whole `rental-system` folder into your XAMPP `htdocs` folder, e.g.
-   `C:\xampp\htdocs\rental-system` (Windows) or `/Applications/XAMPP/htdocs/rental-system` (Mac).
-2. Start **Apache** and **MySQL** from the XAMPP control panel.
-3. Open **phpMyAdmin** (`http://localhost/phpmyadmin`), click **Import**, and
-   import the file `database/schema.sql`. This creates the `rental_system`
-   database and all tables automatically.
-4. In your browser, visit:
-   `http://localhost/rental-system/database/seed_admin.php`
-   This creates your first admin account:
-   - **Email:** admin@campusnest.com
-   - **Password:** Admin@123
-   - **⚠️ Delete `database/seed_admin.php` immediately after this step, and
-     change the password from the admin profile.**
-5. Visit `http://localhost/rental-system/` — you're live!
-
-If your MySQL uses a different username/password (most default XAMPP setups
-don't), edit `config/db.php`.
-
----
-
-## 2. Default Login
-
-| Role     | Email                     | Password   |
-|----------|---------------------------|------------|
-| Admin    | admin@campusnest.com      | Admin@123  |
-| Landlord | *(register via the site)* | — |
-| Student  | *(register via the site)* | — |
-
----
-
-## 3. The Three Modules
-
+## . The Three Modules
 ### 👑 Admin
 - Full control panel with system-wide stats
 - Approve / reject / delete landlord accounts
@@ -81,7 +37,7 @@ don't), edit `config/db.php`.
 
 ---
 
-## 4. Folder Structure
+## . Folder Structure
 
 ```
 rental-system/
@@ -101,10 +57,7 @@ rental-system/
 └── house_details.php     Single house page (booking, wishlist, reviews)
 ```
 
-## 5. Notes for Your Presentation / Report
 
-- The system currently records M-Pesa/Paybill/Bank details for **manual/offline
-  payment** between student and landlord (and landlord and admin for the
   listing fee) — there's no live M-Pesa Daraja API call, which keeps the
   project simple, free to run, and demo-safe. This is a good point to mention
   as a "future enhancement" in your report/viva.
