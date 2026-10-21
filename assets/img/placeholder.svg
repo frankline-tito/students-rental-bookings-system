@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#e7f0ef"/>
+  <g fill="#146c68" opacity="0.5">
+    <path d="M300 110 L420 200 L420 300 L340 300 L340 240 L260 240 L260 300 L180 300 L180 200 Z"/>
+  </g>
+  <text x="300" y="345" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#0f3d3e" text-anchor="middle">No photo uploaded yet</text>
+</svg>

@@ -1,0 +1,155 @@
+:root{
+  --brand-dark:   #0f3d3e;
+  --brand:        #146c68;
+  --brand-light:  #1f9490;
+  --accent:       #ff8c42;
+  --accent-dark:  #e26d1f;
+  --bg-soft:      #f6f9f8;
+  --text-dark:    #1c2b2b;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg-soft);
+  color:var(--text-dark);
+}
+h1,h2,h3,h4,h5,.brand-font{
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+}
+
+/* ---- Navbar ---- */
+.brand-nav{
+  background:linear-gradient(90deg,var(--brand-dark),var(--brand));
+  box-shadow:0 2px 12px rgba(0,0,0,.12);
+}
+.brand-nav .navbar-brand{
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  letter-spacing:.3px;
+}
+.brand-nav .nav-link{color:rgba(255,255,255,.88); font-weight:500;}
+.brand-nav .nav-link:hover{color:#fff;}
+.btn-warm{
+  background:var(--accent); border:none; color:#fff; font-weight:600;
+  padding:.5rem 1.1rem; border-radius:8px;
+}
+.btn-warm:hover{background:var(--accent-dark); color:#fff;}
+
+.btn-brand{
+  background:var(--brand); border:none; color:#fff; font-weight:600; border-radius:8px;
+}
+.btn-brand:hover{background:var(--brand-dark); color:#fff;}
+.btn-outline-brand{
+  border:1.5px solid var(--brand); color:var(--brand); font-weight:600; border-radius:8px;
+}
+.btn-outline-brand:hover{background:var(--brand); color:#fff;}
+
+/* ---- Hero ---- */
+.hero{
+  background:radial-gradient(circle at top right, var(--brand-light), var(--brand-dark) 70%);
+  color:#fff;
+  padding:5rem 0 6rem;
+  position:relative;
+  overflow:hidden;
+}
+.hero h1{font-size:2.6rem;}
+.hero .lead{color:rgba(255,255,255,.9);}
+.search-card{
+  background:#fff;
+  border-radius:16px;
+  padding:1.5rem;
+  box-shadow:0 20px 40px rgba(0,0,0,.18);
+  margin-top:-3rem;
+  position:relative;
+  z-index:5;
+}
+.stat-pill{
+  background:rgba(255,255,255,.12);
+  border-radius:12px;
+  padding:.9rem 1.2rem;
+}
+
+/* ---- Cards ---- */
+.house-card{
+  border:none;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 6px 18px rgba(15,61,62,.08);
+  transition:transform .18s ease, box-shadow .18s ease;
+  height:100%;
+}
+.house-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 14px 30px rgba(15,61,62,.16);
+}
+.house-card .card-img-top{height:190px; object-fit:cover;}
+.badge-type{
+  background:var(--brand); color:#fff; font-weight:500;
+}
+.badge-status-available{background:#d7f5e3;color:#137a3d;}
+.badge-status-booked{background:#f8d7da;color:#8b1c26;}
+.badge-pending{background:#fff3cd;color:#8a6414;}
+.badge-approved{background:#d7f5e3;color:#137a3d;}
+.badge-rejected{background:#f8d7da;color:#8b1c26;}
+.price-tag{color:var(--accent-dark); font-weight:700; font-size:1.15rem;}
+
+.section-title{
+  position:relative;
+  display:inline-block;
+  margin-bottom:1.75rem;
+}
+.section-title:after{
+  content:"";
+  display:block;
+  width:46px; height:4px;
+  background:var(--accent);
+  border-radius:4px;
+  margin-top:.5rem;
+}
+
+/* ---- Dashboard ---- */
+.dash-stat{
+  border-radius:14px;
+  padding:1.4rem;
+  color:#fff;
+  background:linear-gradient(135deg,var(--brand),var(--brand-dark));
+  box-shadow:0 8px 20px rgba(15,61,62,.18);
+}
+.dash-stat.accent{background:linear-gradient(135deg,var(--accent),var(--accent-dark));}
+.dash-stat .num{font-size:2rem; font-weight:700; font-family:'Poppins',sans-serif;}
+.sidebar-card{
+  background:#fff;border-radius:14px;padding:1.25rem;
+  box-shadow:0 4px 14px rgba(15,61,62,.08);
+}
+
+/* ---- Auth pages ---- */
+.auth-wrap{
+  min-height:80vh; display:flex; align-items:center; justify-content:center;
+  padding:2rem 1rem;
+}
+.auth-card{
+  background:#fff; border-radius:16px; max-width:460px; width:100%;
+  padding:2.2rem; box-shadow:0 20px 45px rgba(15,61,62,.14);
+}
+
+/* ---- Footer ---- */
+.site-footer{background:var(--brand-dark); color:#fff;}
+.site-footer a{color:rgba(255,255,255,.75); text-decoration:none;}
+.site-footer a:hover{color:#fff;}
+
+/* ---- Payment info block ---- */
+.pay-info{
+  background:#eef8f6; border:1px dashed var(--brand-light);
+  border-radius:12px; padding:1rem 1.25rem;
+}
+
+.thumb-scroll{display:flex; gap:.5rem; overflow-x:auto; padding-bottom:.4rem;}
+.thumb-scroll img{width:90px;height:70px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;}
+.thumb-scroll img.active{border-color:var(--accent);}
+
+@media (max-width:768px){
+  .hero{padding:3rem 0 5rem;}
+  .hero h1{font-size:1.9rem;}
+}
